@@ -1,4 +1,5 @@
-FROM php:8.2-cli
+
+FROM php:8.2-apache
 WORKDIR /var/www/html
 COPY . .
-CMD ["php", "index.php"]
+EXPOSE 80
